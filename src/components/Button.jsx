@@ -1,16 +1,11 @@
-import React, {Component} from 'react';
-// import './Button.css';
+import React from 'react'
 
-class Button extends Component {
-    render() {
-        return(
-            <p className="col-auto">
-               <button className="button" onClick={()=>this.props.handleClick(this.props.children)}>
-                    {this.props.children}
-               </button>
-            </p>
-        )
-    }
+const Button = () => {
+    return (
+        <div>
+            
+        </div>
+    )
 }
 
 export default Button
