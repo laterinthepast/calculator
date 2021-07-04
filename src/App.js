@@ -1,10 +1,12 @@
 import React from 'react'
+import './styles/styles.css'
+import Calculator from './Calculator';
 
 function App() {
   return (
-    <div className="App">
-      <h1>jalalal</h1>
-    </div>
+
+    <Calculator />
+
   );
 }
 
