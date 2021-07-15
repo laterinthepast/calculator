@@ -101,13 +101,10 @@ const Calculator = () => {
             onClick={(e) => {
               try {
                 setInput(
-                  String(eval(input)).length > 3 &&
-                    String(eval(input)).includes(".")
-                    ? String(eval(input).toFixed(4))
-                    : String(eval(input))
+                  String(eval(input))
                 );
               } catch (e) {
-                console.log(e);
+                alert(e);
               }
             }}
             value="="
