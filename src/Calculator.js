@@ -1,3 +1,5 @@
+
+
 import React, { useState } from 'react'
 import styled from 'styled-components';
 
@@ -101,7 +103,7 @@ const Calculator = () => {
             onClick={(e) => {
               try {
                 setInput(
-                  String(eval(input))
+                  String(this.eval(input))
                 );
               } catch (e) {
                 alert(e);
