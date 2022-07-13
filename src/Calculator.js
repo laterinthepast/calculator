@@ -1,3 +1,4 @@
+/* eslint-disable no-eval */
 
 
 import React, { useState } from 'react'
@@ -103,7 +104,7 @@ const Calculator = () => {
             onClick={(e) => {
               try {
                 setInput(
-                  String(this.eval(input))
+                  String(eval(input))
                 );
               } catch (e) {
                 alert(e);
